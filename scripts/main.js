@@ -44,6 +44,10 @@ function getThumbnailsArray() {
   return thumbnailArray;
 }
 
+function currIndex(value) {
+  index = value;
+}
+
 function prevOtter() {
   'use strict';
   var thumbnails = getThumbnailsArray();
@@ -72,6 +76,7 @@ function initializeEvents() {
   next.onClick = function() {
     nextOtter();
   };
+  currIndex(index);
 }
 
 initializeEvents();
